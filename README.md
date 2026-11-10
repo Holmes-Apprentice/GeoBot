@@ -78,7 +78,7 @@ GeoBot is being developed in several stages.
 
 ### Phase 1 - Main Parts
 
-- [ ] Assemble the main chassis.
+- [ ] Assemble the main body.
 - [ ] Build the Rocker-Bogie Wheel system.
 - [ ] Install The six N20 motors for movement.
 - [ ] Code the Arduino Uno.
