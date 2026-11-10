@@ -72,42 +72,6 @@ The planned project will require:
 
 Once the software is ready, instructions, dependencies, and Other Files will be published here.
 
-## Roadmap
-
-GeoBot is being developed in several stages.
-
-### Phase 1 - Main Parts
-
-- [ ] Assemble the main body.
-- [ ] Build the Rocker-Bogie Wheel system.
-- [ ] Install The six N20 motors for movement.
-- [ ] Code the Arduino Uno.
-- [ ] Code the Raspberry Pi Zero 2 W.
-
-### Phase 2 - Data Transmission
-
-- [ ] Implement A communication System with wired (Via Ethernet Cables) And Wifi modes.
-- [ ] Design a remote-control interface.
-- [ ] Make Communications between the Raspberry Pi and Arduino.
-
-### Phase 3 - Exploration Systems
-
-- [ ] Installing the IMX219 camera.
-- [ ] Creating camera streaming between the Pi and The Computer.
-- [ ] Using environmental sensors.
-- [ ] Monitor Sensor Data via the Connected Computer.
-
-### Phase 4 - Geological Research
-
-- [ ] Install The robotic Arm.
-- [ ] Test the robot in different terrain.
-
-### Phase 5 - Final Testing
-
-- [ ] Test Remote controls.
-- [ ] Test Communications.
-- [ ] Prepare the Science Fair demonstration.
-
 ---
 
 ## Contributing
