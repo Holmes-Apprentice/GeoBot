@@ -1,258 +1,199 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+# GeoBot
+### A Robotic Platform for Remote Geological Exploration
 
+[![Contributors](https://img.shields.io/github/contributors/Holmes-Apprentice/GeoBot?style=for-the-badge)](https://github.com/Holmes-Apprentice/GeoBot/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Holmes-Apprentice/GeoBot?style=for-the-badge)](https://github.com/Holmes-Apprentice/GeoBot/network/members)
+[![Stars](https://img.shields.io/github/stars/Holmes-Apprentice/GeoBot?style=for-the-badge)](https://github.com/Holmes-Apprentice/GeoBot/stargazers)
+[![Issues](https://img.shields.io/github/issues/Holmes-Apprentice/GeoBot?style=for-the-badge)](https://github.com/Holmes-Apprentice/GeoBot/issues)
 
+---
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- PROJECT DESCRIPTION -->
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+**GeoBot** is an upcoming Science Fair project focused on making geological exploration safer, more accessible, and more affordable.
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+The project aims to assist amateur geologists and researchers in exploring caves and underground environments that are difficult, expensive, or potentially dangerous for humans to access.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Using a remotely controlled robotic platform, GeoBot aims to investigate cave environments, examine geological formations, detect potentially hazardous gases, and collect geological samples without requiring researchers to physically enter the explored area.
 
+The ultimate goal is to create an affordable and versatile robotic research platform that can help expand our understanding of underground environments.
 
+### Key Objectives
 
-### Built With
+- **Remote Exploration:** Explore underground environments without requiring direct human entry.
+- **Environmental Monitoring:** Use sensors to monitor air quality and detect potentially hazardous gases.
+- **Visual Research:** Capture images and video of cave interiors and geological formations.
+- **Sample Collection:** Use a robotic arm to collect and transport geological samples.
+- **Terrain Navigation:** Utilize a Rocker-Bogie suspension system to navigate uneven terrain.
+- **Remote Communication:** Establish both wireless and wired communication between GeoBot and a computer.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+## Planned Hardware
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+GeoBot is designed around two main computing systems:
 
+| Component | Purpose |
+|---|---|
+| Raspberry Pi Zero 2 W | Main processing unit and communication |
+| Arduino Uno | Hardware and motor control |
+| Rocker-Bogie Suspension | Uneven terrain navigation |
+| N20 12V 200RPM Motors ×6 | Movement and propulsion |
+| L298 Motor Drivers ×2 | Motor control |
+| IMX219 8MP Camera | Visual exploration |
+| MQ-135 Sensor | Environmental air-quality monitoring |
+| MG996R / MG90S Servos | Robotic arm movement |
+| 3D Printed Chassis | Robot structure |
 
+*Hardware specifications and configurations are subject to change during development.*
 
-<!-- GETTING STARTED -->
+## Built With
+
+The project is planned around the following technologies:
+
+- Raspberry Pi Zero 2 W
+- Arduino Uno
+- Raspberry Pi OS
+- Python
+- Arduino C/C++
+- Electronic sensors and actuators
+- 3D-printed components
+
+---
+
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+GeoBot is currently under development. There is no finalized software package or assembly guide available yet.
+
+This section will be updated as the project progresses.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The planned project will require:
+
+- A Raspberry Pi Zero 2 W.
+- An Arduino Uno.
+- Compatible motors, motor drivers and servos.
+- A Raspberry Pi camera module.
+- Environmental sensors.
+- A computer for remote monitoring and control.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+Once the software is ready, installation instructions, dependencies, and configuration files will be provided here.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+For now, you can follow the repository to keep track of development.
 
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+GeoBot is intended to operate as a remotely controlled geological exploration platform.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The planned operating process is:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. Connect GeoBot to a computer using Wi-Fi or a wired connection.
+2. Establish communication with the Raspberry Pi and Arduino.
+3. Remotely navigate the robot through the environment.
+4. Monitor environmental sensor readings.
+5. Capture images and video of the surroundings.
+6. Use the robotic arm to collect geological samples when appropriate.
+7. Transfer collected research data back to the computer.
 
+The exact control interface and software will be documented as development progresses.
 
+---
 
-<!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+GeoBot is being developed in several stages.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+### Phase 1 - Core Hardware
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] Assemble the main chassis.
+- [ ] Build the Rocker-Bogie suspension system.
+- [ ] Install all six N20 motors.
+- [ ] Configure the Arduino Uno.
+- [ ] Configure the Raspberry Pi Zero 2 W.
+- [ ] Integrate motor drivers.
 
+### Phase 2 - Communication
 
+- [ ] Implement wireless Wi-Fi communication.
+- [ ] Implement wired communication with a computer.
+- [ ] Develop a remote-control interface.
+- [ ] Establish communication between the Raspberry Pi and Arduino.
 
-<!-- CONTRIBUTING -->
+### Phase 3 - Exploration Systems
+
+- [ ] Integrate the IMX219 camera.
+- [ ] Implement camera streaming.
+- [ ] Integrate environmental sensors.
+- [ ] Develop sensor-data monitoring.
+- [ ] Implement cave exploration data collection.
+
+### Phase 4 - Geological Research
+
+- [ ] Build the four-servo robotic arm.
+- [ ] Implement geological sample collection.
+- [ ] Develop sample transportation capabilities.
+- [ ] Improve environmental monitoring.
+- [ ] Test the robot in different terrain conditions.
+
+### Phase 5 - Final Testing
+
+- [ ] Perform full hardware integration.
+- [ ] Test remote operation.
+- [ ] Test communication reliability.
+- [ ] Perform controlled environmental tests.
+- [ ] Prepare the final Science Fair demonstration.
+
+See the [open issues](https://github.com/Holmes-Apprentice/GeoBot/issues) for proposed features and known issues.
+
+---
+
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+GeoBot is an independent Science Fair project.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Suggestions, ideas, and constructive feedback are welcome!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+If you have an idea that could improve the project, feel free to open an issue or submit a pull request.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### How to Contribute
 
-### Top contributors:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add YourFeature'`).
+4. Push to your branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
+---
 
-
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+A license has not yet been selected for this project.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+**Project:** GeoBot
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+**GitHub:** [Holmes-Apprentice](https://github.com/Holmes-Apprentice)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+**Repository:** [GeoBot](https://github.com/Holmes-Apprentice/GeoBot)
 
+For questions, suggestions, or bug reports, please use the [GitHub Issues](https://github.com/Holmes-Apprentice/GeoBot/issues) page.
 
+---
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+This project is being developed as an independent Science Fair project.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Acknowledgments and references will be added as development progresses.
 
+---
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+<p align="center">
+  <b>GeoBot - Exploring the Unknown, One Cave at a Time.</b>
+</p>
